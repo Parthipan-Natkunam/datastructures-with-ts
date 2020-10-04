@@ -27,6 +27,10 @@ class LinkedList {
     return data;
   }
 
+  public getHead(): NodePointer {
+    return this.HEAD;
+  }
+
   public print(): void {
     if (this.HEAD === null) return;
     let currentNode = this.HEAD;

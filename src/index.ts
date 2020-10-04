@@ -1,20 +1,20 @@
 import Stack from "./stack";
-import LinkedList from "./linked list";
+import DynamicStack from "./dynamic stack";
 
 declare global {
   interface Window {
     numericStack: Stack<number>;
     stringStack: Stack<string>;
-    linkedList: LinkedList;
+    dynamicStack: DynamicStack;
   }
 }
 
 const numericStack = new Stack<number>(2);
 const stringStack = new Stack<string>();
-const list = new LinkedList();
+const dynamicStack = new DynamicStack();
 
 window.numericStack = numericStack;
 window.stringStack = stringStack;
-window.linkedList = list;
+window.dynamicStack = dynamicStack;
 
 console.log("Stacks initialized...");
